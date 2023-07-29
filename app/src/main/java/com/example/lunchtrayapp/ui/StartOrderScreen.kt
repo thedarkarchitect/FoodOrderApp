@@ -2,7 +2,9 @@ package com.example.lunchtrayapp.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Button
@@ -22,9 +24,10 @@ fun StartOrderScreen(
     modifier: Modifier = Modifier
 ) {
     Column(
-        modifier = modifier,
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+        modifier = Modifier.fillMaxWidth().fillMaxHeight(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+
     ) {
         Button(
             onClick = onStartOrderButtonClicked,
@@ -39,7 +42,7 @@ fun StartOrderScreen(
 @Composable
 fun StartOrderPreview(){
     StartOrderScreen(
-        onStartOrderButtonClicked = {},
+        onStartOrderButtonClicked = { },
         modifier = Modifier
             .padding(dimensionResource(R.dimen.padding_medium))
             .fillMaxSize()
