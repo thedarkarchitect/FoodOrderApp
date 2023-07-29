@@ -4,9 +4,6 @@ import com.example.lunchtrayapp.model.MenuItem.AccompanimentItem
 import com.example.lunchtrayapp.model.MenuItem.EntreeItem
 import com.example.lunchtrayapp.model.MenuItem.SideDishItem
 
-/**
- * Map of available menu items to be displayed in the menu fragments.
- */
 object DataSource {
 
     val entreeMenuItems = listOf(
